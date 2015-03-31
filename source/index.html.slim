@@ -1,0 +1,33 @@
+---
+title: Viode - open source Q&A community platform
+---
+
+header
+  .container
+    = image_tag 'viode-logo-white.png', alt: 'viode logo', class: 'logo'
+
+    h1 VIODE
+    p.lead
+      abbr> title="question-and-answer" Q&amp;A
+      | community platform built with Ruby on Rails
+
+section.container
+  = link_to 'Screenshots', '#', class: 'button'
+  = link_to 'Source on GitHub', 'https://github.com/viode/viode', class: 'button'
+
+  == partial 'social'
+
+footer
+  .container
+    .pull-left
+      p
+        ' Released under the
+        = link_to 'BSD-2 License', 'https://github.com/viode/viode/blob/master/LICENSE.txt', title: 'BSD 2-clause license'
+        br
+        ' Copyright (c) 2015
+        = link_to 'Nihad Abbasov', 'https://github.com/narkoz'
+    .pull-right
+      p
+        | Love Open Source?
+        br
+        = link_to 'Join the Viode team!', '#', target: '_blank'

@@ -1,0 +1,100 @@
+/*
+ *= require_self
+ *= require_tree .
+ */
+
+// Core variables and mixins
+@import 'bootstrap/variables'
+@import 'bootstrap/mixins'
+
+// Reset and dependencies
+@import 'bootstrap/normalize'
+@import 'bootstrap/print'
+
+// Core CSS
+@import 'bootstrap/scaffolding'
+@import 'bootstrap/type'
+@import 'bootstrap/grid'
+
+// Utility classes
+@import 'bootstrap/utilities'
+
+$footer-height: 70px
+$brand-color: #AC92EC
+$darken-brand-color: #967ADC
+
+@mixin text-selection
+  color: #fff
+  background-color: $darken-brand-color
+
+::selection
+  @include text-selection
+
+::-moz-selection
+  @include text-selection
+
+html
+  position: relative
+  min-height: 100%
+
+body
+  margin-bottom: $footer-height
+  text-align: center
+  background-color: #f5f7fa
+  color: #656d78
+  font-family: 'Quicksand', sans-serif
+
+a
+  color: $brand-color
+  &:hover
+    color: $darken-brand-color
+    text-decoration: none
+
+abbr[title]
+  border-bottom: 1px dotted $darken-brand-color
+
+.logo
+  height: 300px
+  width: 300px
+
+.button
+  display: inline-block
+  color: $brand-color
+  border: 3px solid $brand-color
+  padding: 8px 20px
+  margin: 7px
+  font-size: 24px
+  letter-spacing: 3px
+  border-radius: 5px
+  &:focus, &:hover
+    color: #fff
+    background-color: $brand-color
+    text-decoration: none
+    transition: all 0.15s ease
+    transform: scale(1.03)
+
+section
+  padding: 50px 0
+
+.social-buttons
+  margin-top: 50px
+  iframe
+    border: none
+
+header
+  color: #fff
+  background-color: $brand-color
+  padding: 50px 0
+  h1
+    letter-spacing: 20px
+  p
+    letter-spacing: 7px
+
+footer
+  position: absolute
+  bottom: 0
+  width: 100%
+  height: $footer-height
+  .container
+    padding-top: 10px
+    border-top: 1px solid $brand-color

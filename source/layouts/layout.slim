@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta content="width=device-width, initial-scale=1" name="viewport"
+    meta content="IE=edge" http-equiv="X-UA-Compatible"
+    title = current_page.data.title || 'Viode'
+    link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"
+    = stylesheet_link_tag 'all', type: nil
+    = stylesheet_link_tag '//fonts.googleapis.com/css?family=Quicksand:300,400', type: nil
+    /[if lt IE 9]
+      script src="//html5shiv.googlecode.com/svn/trunk/html5.js"
+    = javascript_include_tag 'ga', type: nil
+
+  body
+    == yield

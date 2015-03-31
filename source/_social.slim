@@ -1,0 +1,16 @@
+- url = 'http://viode.github.io'
+
+.social-buttons
+  ul.list-inline
+    li
+      a.twitter-share-button href="https://twitter.com/share" data-url=url Tweet
+      script
+        |
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+          if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+          fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    li
+      iframe src="http://ghbtns.com/github-btn.html?user=viode&amp;repo=viode&amp;type=watch&amp;count=true" width="110" height="20"
+    li
+      .g-plusone data-size="medium" data-href=url
+      = javascript_include_tag '//apis.google.com/js/platform.js', type: nil, async: 'async', defer: true
