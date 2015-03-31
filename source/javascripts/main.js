@@ -3,6 +3,7 @@ var pswpElement = document.querySelectorAll('.pswp')[0];
 var items = [
   { src: '/images/screenshots/home.png', w: 1436, h: 759 },
   { src: '/images/screenshots/categories.png', w: 1436, h: 759 },
+  { src: '/images/screenshots/ask.png', w: 1436, h: 759 },
   { src: '/images/screenshots/question.png', w: 1436, h: 759 },
   { src: '/images/screenshots/question2.png', w: 1436, h: 759 },
   { src: '/images/screenshots/user-answers.png', w: 1436, h: 759 },
