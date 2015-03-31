@@ -12,7 +12,7 @@ header
       | community platform built with Ruby on Rails
 
 section.container
-  = link_to 'Screenshots', '#', class: 'button'
+  = link_to 'Screenshots', '#', class: 'button', id: 'js-screenshots-btn'
   = link_to 'Source on GitHub', 'https://github.com/viode/viode', class: 'button'
 
   == partial 'social'
@@ -31,3 +31,5 @@ footer
         | Love Open Source?
         br
         = link_to 'Join the Viode team!', '#', target: '_blank'
+
+== partial 'photoswipe'
